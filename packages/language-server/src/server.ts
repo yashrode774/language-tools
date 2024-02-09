@@ -103,6 +103,7 @@ export function startServer(options?: LSOptions) {
         const workspaceUris = evt.workspaceFolders?.map((folder) => folder.uri.toString()) ?? [
             evt.rootUri ?? ''
         ];
+        Logger.log('Yash Rode tried connnecting!!!!!!!!!!!!!!!!!!!!!!!!');
         Logger.log('Initialize language server at ', workspaceUris.join(', '));
         if (workspaceUris.length === 0) {
             Logger.error('No workspace path set');
